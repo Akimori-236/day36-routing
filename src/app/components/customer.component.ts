@@ -30,6 +30,7 @@ export class CustomerComponent implements OnInit, OnDestroy {
       (queryParams) => {
         console.debug(queryParams)
         console.debug(queryParams['fId'].split('|'))
+        // save
         this.fId = queryParams['fId'].split('|')
       }
     )
